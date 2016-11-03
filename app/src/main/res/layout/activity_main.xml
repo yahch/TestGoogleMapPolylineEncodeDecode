@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.igpsport.testpolylineencoderdecoder.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/edtPoints"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:inputType="text|textMultiLine"
+        android:background="@drawable/edt"
+        android:hint="30.12214,114.2321;30.2123,114.5645"
+        android:gravity="top|left"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encode"
+        android:id="@+id/btnEncode"
+        android:layout_below="@+id/edtPoints"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DECODE"
+        android:id="@+id/btnDecode"
+        android:layout_alignBottom="@+id/btnEncode"
+        android:layout_toEndOf="@+id/btnEncode"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:id="@+id/edtOutput"
+        android:inputType="text|textMultiLine"
+        android:background="@drawable/edt"
+        android:gravity="top|left"
+        android:padding="5dp"
+        android:layout_below="@+id/btnEncode"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
